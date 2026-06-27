@@ -696,7 +696,7 @@ street.addEventListener('input', () => {
            streetIcon.classList.add('success');
         streetIcon.classList.remove('error');
        streetIcon.innerHTML =
-        '<i class="fa-solid fa-circle-xmark"></i>';
+        '<i class="fa-solid fa-circle-check"></i>';
     }
 
 });
@@ -724,7 +724,7 @@ city.addEventListener('input', () => {
         iconCIty.classList.add('success');
         iconCIty.classList.remove('error');
        iconCIty.innerHTML =
-        '<i class="fa-solid fa-circle-xmark"></i>';
+       '<i class="fa-solid fa-circle-check"></i>';
     }
 
 });
@@ -755,7 +755,7 @@ state.addEventListener('input', () => {
         stateIcon.classList.add('success');
         stateIcon.classList.remove('error');
        stateIcon.innerHTML =
-        '<i class="fa-solid fa-circle-xmark"></i>';
+   '<i class="fa-solid fa-circle-check"></i>';
     }
 
 });
@@ -783,7 +783,7 @@ zipCode.addEventListener('input', () => {
         zipIcon.classList.add('success');
         zipIcon.classList.remove('error');
        zipIcon.innerHTML =
-        '<i class="fa-solid fa-circle-xmark"></i>';
+       '<i class="fa-solid fa-circle-check"></i>';
     }
 
 });

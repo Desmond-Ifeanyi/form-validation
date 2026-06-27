@@ -764,6 +764,8 @@ left: 10rem;
 }
 
 
+
+
 @media screen and (min-width: 600px) {
    
 #icon-city{
@@ -863,10 +865,15 @@ bottom: 1rem;
   background-color: #ECF0F3;
 }
 
+
+
 }
 
 
 @media screen and (min-width: 768px) {
+
+
+
     h1 {
         text-align: left;
         margin-bottom: 1rem;
