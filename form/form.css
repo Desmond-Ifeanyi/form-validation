@@ -1,0 +1,1090 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    background-color: #ECF0F3;
+}
+
+#wrapper {
+    
+    width: 100%;
+    max-width: 850px;
+    padding: 1.5rem;
+    background-color: #fff;
+}
+#page1{
+display: block;
+}
+
+#page2,
+#page3{
+    display:none;
+}
+
+h1 {
+    color: #15161B;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+
+.form-nav {
+    display: none;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.form-nav-item {
+    background-color: #EDF1F4;
+    width: calc(100% / 3);
+    text-transform: capitalize;
+    font-size: .9rem;
+    color: #34373C;
+    padding: .5rem 2rem;
+    white-space: nowrap;
+    position: relative;
+    cursor: pointer;
+}
+
+.form-nav-item.active {
+    background-color: #196BCF;
+    color: #eee;
+}
+
+.form-nav-item.active + .nav-item2::after {
+    border-left-color: #196BCF;
+}
+.form-nav-item.active + .nav-item3::after {
+    border-left-color: #196BCF;
+}
+
+.form-nav .nav-item1 {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.form-nav .nav-item2::before,
+.form-nav .nav-item3::before {
+    position: absolute;
+    content: "";
+    border-style: solid;
+    border-width: 1.2rem;
+    top: -3px;
+    left: 0;
+    border-color: #fff;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+}
+
+.form-nav .nav-item2::after,
+.form-nav .nav-item3::after {
+    position: absolute;
+    content: "";
+    border-style: solid;
+    border-width: 19px;
+    top: -1.7px;
+    left: -3px;
+    border-color: #EDF1F4;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+}
+
+.form-nav .nav-item2 {
+}
+
+.form-nav .nav-item3 {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+button {
+    border: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+#main-form {
+
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.step1 {
+    gap: 1rem;
+}
+
+.step header {
+    display: flex;
+    flex-direction: column;
+}
+
+.step h2 {
+    color: #15161B;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
+
+header p {
+    font-size: .8rem;
+    margin-top: .4rem;
+}
+
+.form-fields {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: .5rem 0;
+}
+
+label {
+    color: #15161B;
+    font-weight: 500;
+    font-size: 1rem;
+    text-transform: capitalize;
+    margin-bottom: .3rem;
+}
+
+.text-box {
+    width: 100%;
+    display: flex;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    position: relative;
+}
+
+.password-box {
+    background-color: blue;
+    display: flex;
+    width: 95%;
+    position: relative;
+    border: 1px solid #15161B;
+    border-radius: 8px;
+}
+
+input {
+    width: 95%;
+    padding: .3rem 1rem;
+    font-size: .9rem;
+    border-radius: 8px;
+    border: 1px solid #15161B;
+}
+
+.password-box input {
+    width: 100%;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+.password-box input:focus {
+    border: none;
+}
+
+input[type="checkbox"] {
+    width: 14px;
+    padding: 0;
+    border: none;
+}
+
+.text-box .icon {
+    position: absolute;
+    left: calc(95% + 5px);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.text-box .icon.success {
+    color: #1F9354;
+}
+
+.text-box .icon.warn {
+    color: #E8B423;
+}
+
+.text-box .icon.error {
+    color: #8c0720;
+}
+/* .valid{
+    border:2px solid #1F9354;
+}
+
+.invalid{
+    border:2px solid red ;
+} */
+
+/* 
+.success{
+    color:green;
+}
+
+.error{
+    color:red;
+} */
+
+
+
+.text-box .icon-eye {
+    position: absolute;
+    right: .5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: .8rem;
+    color: #aaa;
+}
+
+.notice {
+    position: absolute;
+    left: 95%;
+    top: -.3rem;
+    transform: translate(-100%, -100%);
+    font-size: .8rem;
+}
+
+.notice.warn {
+    color: #E8B423;
+}
+
+.notice.success {
+    color: #1F9354;
+}
+
+.input-summ {
+    font-size: .8rem;
+    color: #15161B;
+    margin-top: 5px;
+}
+
+.input-summ.error {
+    color: #8c0720;
+}
+
+.summary-box {
+    padding: .5rem 0;
+}
+
+.summ-item {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.summ-item .icon {
+    color: #8c0720;
+}
+
+.summ-item .icon.success {
+    color: #1F9354;
+}
+
+.summ-item .input-summ {
+    font-weight: 500;
+}
+
+.form-control-check {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+.form-control-check label {
+    font-size: .8rem;
+    margin-bottom: 0;
+}
+
+label a {
+    text-decoration: none;
+}
+
+button.save {
+    width: fit-content;
+    padding: .5rem;
+    cursor: pointer;
+    background-color: #196BCF;
+    transition: background-color .4s ease-out;
+    border-radius: 5px;
+    color: #fff;
+    align-self: flex-end;
+}
+
+button.save:hover {
+    background-color: #1F9354;
+}
+
+
+
+/* -------second-page--------- */
+
+#wrapper-two input{
+    background-color: #ECF0F3;
+}
+.street-city-container, .state-zip-container{
+    display: flex;
+
+}
+.address-container input{
+  height: 2.3rem;
+}
+#Required-shift{
+/* background-color: red; */
+position: absolute;
+left: 9.2rem;
+}
+.street-city-container input, .state-zip-container input{
+   width: 80%;
+  
+}
+#icon-city{
+    position: absolute;
+    left: 9.5rem;
+    bottom: 1.7rem;
+     /* background-color: red; */
+}
+#icon-zip{
+     position: absolute;
+    left: 9.6rem;
+  
+    
+}
+#icon-strecity{
+  position: relative;
+  left: 0;
+  margin-top: 3px;
+  /* background-color: red; */
+ 
+}
+
+#stater-icon{
+position: relative;
+  left: 0;
+  margin-top: 7px;
+  /* background-color: green; */
+}
+
+.city-field input{  
+   margin-left: 1rem;
+    margin-top: 1.5rem;
+  
+}
+
+.zipcode-field input{
+     margin-left: 1rem;
+    
+}
+
+.state-zip-container{
+    margin-top: 1rem;
+}
+
+button.back{
+    border: none;
+    cursor: pointer;
+    background-color: #c9c3c3;
+    padding: 5px 7px;
+    border-radius: 5px;
+    transition: background-color 0.4s ease-out;
+    width: fit-content;
+}
+
+button.back:hover{
+    background-color:#8d8383 ;
+}
+.button-container{
+    display: flex;
+    gap: 3.4rem;
+}
+
+.number-field input{
+    width: 20rem;
+}
+
+
+/* -----------gender css --------- */
+
+.Gender-field{
+  position:relative;
+  width:20rem;
+  margin:20px 0;
+  /* background-color: blue; */
+}
+#phone-require{
+    /* background-color: red; */
+    top: 1.2rem;
+    right: -2rem;
+}
+.Gender-field label{
+  display:block;
+  margin-bottom:8px;
+  font-weight:bold;
+  
+}
+
+.Gender-field select{
+  width:320px;
+  height:50px;
+  border:2px solid #ccc;
+  border-radius:10px;
+  padding:0 15px;
+  font-size:16px;
+  outline:none;
+  cursor:pointer;
+  background-color: #ECF0F3;
+}
+
+
+
+
+
+/* -------------------third-page------------------- */
+
+
+
+.portfolio-container{
+  width:320px;
+bottom: .6rem;
+  
+}
+
+.portfolio-container label{
+  display:block;
+  margin-bottom:10px;
+  font-weight:bold;
+}
+
+.custom-upload{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border:2px dashed #ddd;
+  border-radius:12px;
+  height: 7rem;
+  padding:15px;
+  background-color: #ECF0F3;
+}
+
+.upload-left{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color:#555;
+}
+#file-name{
+    font-weight: 800;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.upload-img{
+    font-size: 1.8rem;
+}
+#select-btn{
+  border:none;
+  padding:10px 15px;
+  border-radius:8px;
+  background:#cdd0d3;
+  cursor:pointer;
+  font-weight:bold;
+}
+#select-btn:hover{
+  opacity:0.8;
+}
+
+.note{
+  margin-top:10px;
+  color:gray;
+  font-size:14px;
+}
+
+
+
+
+/* --- */
+
+
+  .skill-container{
+    max-width:360px;
+    width: 21.4rem;
+}
+
+  .field-label{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:8px;
+}
+  .field-label span:first-child{
+    font-size:14px;
+    font-weight:500;
+    color:#111;
+    
+}
+  .required{
+    font-size:13px;
+    position: relative;
+    right: 2rem; 
+     color: #E8B423;
+}
+  .row{
+    display:flex;
+    align-items:flex-start;
+    gap:8px
+}
+
+  .tag-area{
+    flex:1
+}
+
+  .tag-box{
+    border:1.5px solid #b8b1b1;
+    border-radius:8px;
+    padding:8px 10px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px;
+    align-items:center;
+     background-color: #ECF0F3;
+    cursor:text
+}
+
+  .tag{
+    display:flex;
+    align-items:center; 
+    gap:5px;background:#f0f0f0;
+    border:1px solid #ccc;
+    border-radius:6px;
+    padding:3px 10px;
+    font-size:13px;
+    color:#111
+}
+
+  .tag button{
+    background:none;
+    border:none;
+    padding:0;
+    cursor:pointer;
+    font-size:14px;line-height:1;
+    color:#888;
+    display:flex;
+    align-items:center
+}
+
+  .tag button:hover{
+    color:#333
+}
+  .tag-input{
+    border:none;
+    outline:none;
+    font-size:13px;
+    color:#111;
+    background:transparent;
+    min-width:60px;
+    flex:1
+}
+  
+
+  
+  .optional-note{
+    font-size:12px;
+    color:#e05252;
+    margin-top:6px
+}
+
+#skill-icon{
+position: relative;
+top: 1.7rem;
+}
+
+#skill-icon.success {
+    color: #1F9354;
+}
+
+#skill-icon.error {
+    color: #8c0720;
+}
+
+.summary-container input{
+    height: 4rem;
+}
+.summary-container input::placeholder{
+ position: relative;
+ bottom: .5rem;
+}
+
+.button-container-three{
+    display: flex;
+    gap: 5.5rem;
+}
+.select-icon{
+    display: flex;
+}
+#primary-icon{
+    position: relative;
+    margin-top: .6rem;
+    left: .7rem;
+   
+}
+
+#experiece-icon{
+     position: relative;
+    top: 1.7rem;
+    left: .4rem;
+}
+.primary-job select{
+  width:32.5rem;
+  height:40px;
+  border:2px solid #ccc;
+  border-radius:10px;
+  padding:0 15px;
+  font-size:16px;
+  outline:none;
+  cursor:pointer;
+  background-color: #ECF0F3;
+}
+
+.experiece-container select{
+  width:32.7rem;
+  height:40px;
+  border:2px solid #ccc;
+  border-radius:10px;
+  padding:0 15px;
+  font-size:16px;
+  outline:none;
+  cursor:pointer;
+  background-color: #ECF0F3;
+}
+
+
+.primary-job .warn{
+    /* background-color: red; */
+    position: absolute;
+    top:1rem;
+}
+.current-job-container input{
+height:40px;
+  border:2px solid #ccc;
+  border-radius:10px;
+  padding:0 15px;
+  font-size:16px;
+  outline:none;
+  cursor:pointer;
+  background-color: #ECF0F3;
+}
+.company-name input{
+/* width:32rem; */
+  height:40px;
+  border:2px solid #ccc;
+  border-radius:10px;
+  padding:0 15px;
+  font-size:16px;
+  outline:none;
+  cursor:pointer;
+  background-color: #ECF0F3;
+}
+
+@media screen and (min-width: 414px) {
+   
+#icon-city{
+    position: absolute;
+    left: 10.3rem;
+    bottom: 1.7rem;
+    
+   
+}
+
+#icon-zip{
+     position: absolute;
+    left: 10.3rem;
+}
+.Gender-field select{
+  width:345px;
+
+}
+#Required-shift{
+/* background-color: red; */
+position: absolute;
+left: 10rem;
+}
+
+.button-container{
+    display: flex;
+    gap: 5.3rem;
+    
+}
+
+.number-field input{
+    width: 22rem;
+}
+
+.Gender-field{
+  position:relative;
+  width:21.7rem;
+  margin:20px 0;
+  /* background-color: blue; */
+}
+
+.portfolio-container{
+  width:350px;
+  margin-top: 1rem;
+ 
+}
+ 
+
+.skill-container{
+    max-width:375px;
+    width: 25rem;
+}
+
+.button-container-three{
+    display: flex;
+    gap: 7.3rem;
+}
+}
+
+
+@media screen and (min-width: 600px) {
+   
+#icon-city{
+    position: absolute;
+    left: 18.5rem;
+    bottom: 1.7rem;
+   
+}
+ .street-city-container input, .state-zip-container input{
+   width: 100%;
+ 
+}
+
+#icon-zip{
+     position: absolute;
+    left: 18.5rem;
+   
+   
+}
+
+.button-container{
+    gap: 16.5rem;
+
+}
+.city-field input{  
+   margin-left: 5rem;
+    margin-top: 1.5rem;
+  
+}
+.zipcode-field input{
+     margin-left: 5rem;
+     
+}
+.Gender-field select{
+  width:520px;
+ 
+}
+
+#Required-shift{
+/* background-color: red; */
+position: absolute;
+left: 18rem;
+bottom: 1rem;
+}
+
+.number-field input{
+    width: 32.5rem;
+}
+
+
+
+.Gender-field{
+  position:relative;
+  width:32.8rem;
+  margin:20px 0;
+  /* background-color: blue; */
+}
+
+#phone-require{
+    /* background-color: red; */
+    top: 1.2rem;
+    right: -.8rem;
+}
+
+
+.portfolio-container{
+  width:520px;
+  margin-top: 1rem;
+}
+
+
+.skill-container{
+    max-width:560px;
+    width: 34.3rem;
+}
+
+.button-container-three{
+    display: flex;
+    gap: 18.3em;
+}
+#primary-icon{
+    position: relative;
+    top: .8rem;
+    left: .9rem;
+}
+
+
+.experiece-container select{
+  width:32.7rem;
+  height:40px;
+  border:2px solid #ccc;
+  border-radius:10px;
+  padding:0 15px;
+  font-size:16px;
+  outline:none;
+  cursor:pointer;
+  background-color: #ECF0F3;
+}
+
+}
+
+
+@media screen and (min-width: 768px) {
+    h1 {
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+
+    .form-nav {
+        display: flex;
+    }
+
+
+    .address-container{
+        display: flex;
+    }
+
+    .state-field input{
+        position: relative;
+        top: 8px;
+        left: 1rem;
+        /* background-color: red; */
+    }
+
+    .street-city-container input, .state-zip-container input{
+         width: 79%;
+ 
+    }
+    .city-field input{
+        /* background-color: orange; */
+        position: relative;
+        right: 3rem;
+    }
+
+    .zipcode-field input{
+        position: relative;
+        right: 2.6rem;
+        top: 10px;
+        /* background-color: brown; */
+    }
+    .state{
+        position: relative;
+        left: 1rem;
+        top: 1.5rem
+    }
+    #icon-zip{
+     position: absolute;
+    left: 11.7rem;
+    bottom: 10px;
+}
+
+
+
+    #icon-city{
+        position: absolute;
+        left: 11rem;
+    }
+    .button-container{
+        gap:31.4rem;
+        margin-top: 9px;
+    }
+
+    #stater-icon{
+    left: 1rem;
+    top: 1.3rem;
+    }
+    #Required-shift{
+    /* background-color: red; */
+    position: absolute;
+    left: 11.5rem;
+    top: 1px;
+    }
+
+
+    .Names-container{
+    /* background-color: red; */
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 4.7rem;
+    }
+
+    .Names-container input{
+    width: 21.5rem;
+    }
+
+    .date-gender-container{
+    /* background-color: green; */
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 4.7rem;
+    }
+
+
+    .date-gender-container input{
+    width: 21.5rem;
+    }
+    .number-container {
+    width: 22.2rem;
+    }
+
+    #FirstName-icon{
+        position: absolute;
+        left: 21.5rem;
+        /* background-color: red; */
+    }
+    #LastName-icon{
+         position: absolute;
+        left: 21.5rem;
+        /* background-color: blue; */
+    }
+    #date-icon{
+          position: absolute;
+        left: 21.5rem;
+    }
+
+    .number-field input{
+    width: 21.4rem;
+}
+
+
+.Gender-field{
+  position:relative;
+  width:21.5rem;
+  margin:20px 0;
+  /* background-color: blue; */
+}
+.Gender-field select{
+  width:340px;
+ 
+}
+#phone-require{
+    /* background-color: red; */
+    top: 1.2rem;
+    right: -1.5rem;
+}
+
+
+.skill-portfolio-container{
+   display: flex;
+}
+.company-name{
+ width: 23.5rem;
+}
+
+
+.company-experience-container{
+display: flex;
+gap: 1.5rem;
+}
+#primary-icon{
+    position: relative;
+    left: .2rem;
+}
+.current-job-container{
+width: 23.5rem;
+}
+.job-container-container{
+display: flex;
+gap: 1.5rem;
+}
+.experiece-container select{
+     width:22.5rem;
+  height:40px;
+  border:2px solid #ccc;
+  border-radius:10px;
+  padding:0 15px;
+  font-size:16px;
+  outline:none;
+  cursor:pointer;
+  background-color: #ECF0F3;
+}
+.primary-job select{
+  width:22.5rem;
+  height:40px;
+  border:2px solid #ccc;
+  border-radius:10px;
+  padding:0 15px;
+  font-size:16px;
+  outline:none;
+  cursor:pointer;
+  background-color: #ECF0F3;
+}
+.skill-portfolio-container{
+    gap: 1.5rem;
+}
+.skill-container{
+width: 23.8rem;
+}
+.portfolio-container{
+width: 24rem;
+position: relative;
+right: .6rem;
+}
+
+
+.summary-container{
+    width: 52rem;
+}
+.button-container-three{
+    gap: 35rem;
+}
+}
+
+
+
+
+@media screen and (min-width: 850px) {
+    #wrapper {
+        margin: 2rem 0;
+    }
+
+
+    /* -----second-page------------- */
+
+    /* .city-field input{
+    margin-top: 1.5rem;
+    margin-left: 6rem;
+}
+
+
+.street-city-container input{
+   width: 100%;
+} */
+}

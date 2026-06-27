@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./form.css" />
+   <link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/25.3.0/css/intlTelInput.min.css"
+/>
+    <title>Taacodeep Campus | Multi Level Form</title>
+  </head>
+  <body>
+    <main id="wrapper">
+      <h1 id="main-title">registration process</h1>
+      <nav class="form-nav">
+        <div class="form-nav-item nav-item1 active">1. account details</div>
+        <div class="form-nav-item nav-item2">2. personal info</div>
+        <div class="form-nav-item nav-item3">3. professional profile</div>
+      </nav>
+
+      <!-- -----first=page------ -->
+      <section id="page1">
+      <form id="main-form1">
+        <section class="step step1">
+          <header>
+            <h2>step1: account details</h2>
+            <p>
+              please create your login credentials and verify essential
+              information
+            </p>
+          </header>
+          <section class="form-fields">
+            <div class="form-control email-field">
+              <label for="email">email address</label>
+              <div class="text-box">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email add@gmail.com"
+                />
+                <span class="icon error"
+                  ><i class="fa-solid fa-circle-xmark"></i
+                ></span>
+                <span class="notice warn">*Required</span>
+              </div>
+              <p class="input-summ">Online validation is available</p>
+            </div>
+            <div class="form-control pass-field">
+              <label for="pass">password</label>
+              <div class="text-box">
+                <div class="password-box">
+                  <input
+                    type="password"
+                    name="pass"
+                    id="pass"
+                    class="hidden-pass"
+                    placeholder="password"
+                  />
+                  <span class="icon-eye"
+                    ><i class="fa-solid fa-eye-slash"></i
+                  ></span>
+                </div>
+                <span class="icon password-notify error"
+                  ><i class="fa-solid fa-circle-xmark"></i
+                ></span>
+                <span class="notice success">Password</span>
+              </div>
+              <div class="summary-box">
+                <div class="summ-item length">
+                  <span class="icon"
+                    ><i class="fa-solid fa-circle-xmark"></i
+                  ></span>
+                  <span class="input-summ">8+ Characters</span>
+                </div>
+                <div class="summ-item upper">
+                  <span class="icon"
+                    ><i class="fa-solid fa-circle-xmark"></i
+                  ></span>
+                  <span class="input-summ">At lease 1 uppercase</span>
+                </div>
+                <div class="summ-item lower">
+                  <span class="icon"
+                    ><i class="fa-solid fa-circle-xmark"></i
+                  ></span>
+                  <span class="input-summ">At lease 1 lowercase</span>
+                </div>
+                <div class="summ-item special">
+                  <span class="icon"
+                    ><i class="fa-solid fa-circle-xmark"></i
+                  ></span>
+                  <span class="input-summ">At lease 1 Special Character</span>
+                </div>
+                <div class="summ-item num">
+                  <span class="icon"
+                    ><i class="fa-solid fa-circle-xmark"></i
+                  ></span>
+                  <span class="input-summ">At lease 1 number</span>
+                </div>
+              </div>
+            </div>
+            <div class="form-control">
+              <label for="confirm-pass">confirm password</label>
+              <div class="text-box">
+                <input
+                  type="password"
+                  name="confirm-pass"
+                  id="confirm-pass"
+                  placeholder="Confirm Password"
+                />
+                <span class="icon warn"
+                  ><i class="fa-solid fa-circle-exclamation"></i
+                ></span>
+                <span class="notice warn">*Required</span>
+              </div>
+              <p class="input-summ">Validation password herd is matching</p>
+            </div>
+            <div class="form-control">
+              <div class="form-control-check">
+                <input type="checkbox" name="terms" id="terms" />
+                <label for="terms"
+                  >I agree to <a href="#">Terms &amp; Conditions</a></label
+                >
+              </div>
+              <div class="form-control-check">
+                <input type="checkbox" name="privacy" id="privacy" />
+                <label for="privacy"><a href="#">Privacy Policy</a></label>
+              </div>
+            </div>
+            <button type="button" class="save next1">Save &amp; Continue</button>
+          </section>
+        </section>
+      </form>
+      </section>
+    
+    
+
+    <!--  second-page -->
+
+    <section id="page2">
+      <form id="main-form2">
+        <section class="step step1">
+          <header>
+            <h2>step2: Personal Info</h2>
+            <p>
+              please enter your personal basic and contact information
+              to complete your profile
+            </p>
+          </header>
+          <section class="form-fields">
+
+              <div class="Names-container">
+
+            <div class="form-control firstName-field">
+              <label for="firstName">First Name</label>
+              <div class="text-box" id="firstNameBox">
+                <input
+                  type="text"
+                  name="name"
+                  id="firstName"
+                  placeholder="Enter your First name"
+                />
+                <span class="icon error" id="FirstName-icon"
+                  ><i class="fa-solid fa-circle-xmark"></i
+                ></span>
+                <span class="notice warn">*Required</span>
+              </div>
+             
+            </div>
+
+            <div class="form-control lastName-field">
+              <label for="Lastname">Last Name</label>
+              <div class="text-box">
+                <input
+                  type="text"
+                  name="name"
+                  id="Lastname"
+                  placeholder="Enter your Last name"
+                />
+                <span class="icon error" id="LastName-icon"
+                  ><i class="fa-solid fa-circle-xmark"></i
+                ></span>
+                <span class="notice warn">*Required</span>
+              </div>
+            
+            </div>
+
+            </div>
+
+            
+              <div class="date-gender-container">
+
+            <div class="form-control Date-field">
+              <label for="date">Date of Birth</label>
+              <div class="text-box">
+                <input
+                  type="date"
+                  name="date"
+                  id="dateInput"
+                  placeholder="select your birthdate"
+                />
+                 <span class="icon error" id="date-icon"
+                  ><i class="fa-solid fa-circle-exclamation"></i></span>
+                <span class="notice error">*Required</span>
+              </div>
+              <p class="date-text">must be over 18 year old</p>
+            </div>
+
+
+
+            <div class="form-control Gender-field">
+              <label for="gender">Gender</label>
+
+              <select id="gender" class="text-box">
+                <option value="">Select gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+              
+                <span class="notice warn"  id="phone-require">*Required</span>
+              </div>
+            
+            </div>
+
+
+            </div>
+
+          <div class="number-container">
+            <div class="form-control number-field">
+              <label for="phone">Mobile Number</label>
+              <div class="text-box">
+                <input
+                  type="tel"
+                  name="number"
+                  id="phone"
+                  placeholder="Enter your phone number"
+                />
+                 <span class="icon error" id="numberIcon"
+                    ><i class="fa-solid fa-circle-xmark"></i
+                ></span>
+                <span class="notice warn">*Required</span>
+              </div>
+            </div>
+          </div>
+
+          <section class="address-container">
+
+          <div class="street-city-container">
+
+            <div class="form-control street-field">
+              <label for="street">Mailing Address</label>
+              <div class="text-box">
+                <input
+                  type="text"
+                  name="text"
+                  id="street"
+                  placeholder="Street"
+                />
+                 <span class="icon error" id="icon-strecity"
+                   ><i class="fa-solid fa-circle-xmark"></i
+                ></span>
+              
+              </div>
+            </div>
+
+             <div class="form-control city-field">
+              <div class="text-box">
+                <input
+                  type="text"
+                  name="text"
+                  id="city"
+                  placeholder="City"
+                />
+                 <span class="icon error" id="icon-city"
+                    ><i class="fa-solid fa-circle-xmark"></i
+                ></span>
+              </div>
+            </div>
+
+          </div>
+
+
+
+          <div class="state-zip-container">
+
+             <div class="form-control state-field">
+             
+              <div class="text-box">
+                <input
+                  type="text"
+                  name="text"
+                  id="state"
+                  placeholder="State"
+                />
+                 <span class="icon error " id="stater-icon"
+                  ><i class="fa-solid fa-circle-xmark"></i
+                ></span>
+               
+              </div>
+            </div>
+
+
+             <div class="form-control zipcode-field">
+             
+              <div class="text-box">
+                <input
+                  type="text"
+                  name="text"
+                  id="zipCode"
+                  placeholder="Zip code"
+                />
+                 <span class="icon error" id="icon-zip"
+                   ><i class="fa-solid fa-circle-xmark"></i
+                ></span>
+                <span class="notice warn" id="Required-shift">*Required</span>
+              </div>
+            </div>
+
+          </div>
+
+          </section>
+
+          <div>
+             <div class="form-control aboutUrself-field">
+              <label for="text">A few detail about yourself</label>
+              <div class="text-box">
+                <input
+                  type="text"
+                  name="text"
+                  id="bio"
+                  placeholder="Optional bio or short bio"
+                />
+                 
+              </div>
+            </div>
+          </div>
+
+
+            <div class="button-container">
+              <button type="button" class="back back1">Back to account detail</button>
+
+              <button type="button" class="save next2">Save &amp; Continue</button>
+            </div>
+            
+          </section>
+        </section>
+      </form>
+    </section>
+
+
+
+    <!-- ---------------third-page------ -->
+    <section id="page3">
+
+      
+      <form id="main-form3">
+        <section class="step step1">
+          <header>
+            <h2>step3: Professional Profile</h2>
+            <p>
+              please provide detial about your professional background
+              and expertise.
+            </p>
+          </header>
+          <section class="form-fields">
+
+              <div class="job-container-container">
+
+            <div class="form-control primary-job">
+              
+                 <label for="job">primary job function</label>
+
+                 <div class="select-icon  text-box">
+              <select id="job" >
+                <option value="">Select a job function</option>
+                <option value="male">Frontend developer</option>
+                <option value="female">Backend developer</option>
+                <option value="other">Fullstack developer</option>
+              </select>
+  
+                <span class="icon error" id="primary-icon"
+                  ><i class="fa-solid fa-circle-xmark"></i
+                ></span>
+                
+                </div>
+                <span class="notice warn">*Required</span>
+              </div>
+             
+
+              
+            <div class="form-control current-job-container">
+              <label for="job">current job title</label>
+              <div class="text-box">
+                <input
+                  type="job"
+                  name="job"
+                  id="currebt-job"
+                  placeholder="Enter your title"
+                />
+                <span class="icon error" id="currentIcon"
+                  ><i class="fa-solid fa-circle-xmark"></i
+                ></span>
+                <span class="notice warn">*Required</span>
+              </div>
+              
+            </div>
+
+            </div>
+
+
+          
+
+            
+              <div class="company-experience-container">
+
+            <div class="form-control company-name">
+              <label for="name">Company Name</label>
+              <div class="text-box">
+                <input
+                  type="name"
+                  name="name"
+                  id="company-name"
+                  placeholder="Enter current company name"
+                />
+                <span class="icon error" id="company-icon"
+                    ><i class="fa-solid fa-circle-xmark"></i
+                ></span>
+                <span class="notice warn">*Required</span>
+              </div>
+              
+            </div>
+
+
+
+            <div class="form-control experiece-container">
+              <label for="gender">Year of experiece</label>
+            
+                 <div class="select-icon  text-box">
+              <select id="experiece">
+                <option value="">Select experiece level</option>
+                <option value="male">1 to 2 years</option>
+                <option value="female">3 to 5 years</option>
+                <option value="other">5 to 8 years</option>
+              </select>
+                <span class="icon error" id="experiece-icon"
+                    ><i class="fa-solid fa-circle-xmark"></i
+                ></span>
+                <span class="notice warn">*Required</span>
+              </div>
+           
+            </div>
+
+            </div>
+
+
+  
+            <div class="skill-portfolio-container">
+          
+            <div class="form-control skill-container">
+                  
+        <div class="field-label">
+          <span>Key Skills</span>
+         <span class="required warn">*Required</span>
+        </div>
+        <div class="row ">
+          <div class="tag-area" >
+            <div class="tag-box" id="tagBox">
+              <div class="tag"><span>Python</span><button onclick="removeTag(this)" aria-label="Remove Python">×</button></div>
+              <div class="tag"><span>UI/UX</span><button onclick="removeTag(this)" aria-label="Remove UI/UX">×</button></div>
+              <div class="tag"><span>Cloud</span><button onclick="removeTag(this)" aria-label="Remove Cloud">×</button></div>
+              <div style="width:100%;display:flex;align-items:center;gap:6px">
+                <div class="tag"><span>Cloud Architecture</span><button onclick="removeTag(this)" aria-label="Remove Cloud Architecture">×</button></div>
+                <input class="tag-input" id="tagInput" type="text" placeholder="" aria-label="Add skill"/>
+              </div>
+            </div>
+            <p class="optional-note">Optional but recommended</p>
+          </div>
+          <span class="icon error" id="skill-icon">
+            <i class="fa-solid fa-circle-xmark"></i>
+          </span>
+                    
+        </div>
+
+
+            </div>
+         
+
+            <div class="form-control portfolio-container">
+
+                <label>Upload Portfolio/CV</label>
+
+                <div class="custom-upload">
+
+                  <div class="upload-left">
+                    <span class="upload-img">📄</span>
+                    <span id="file-name">File upload</span>
+                  </div>
+                  <input type="file" id="file-input" hidden>
+
+                  <label for="file-input" id="select-btn" class="select-btn">
+                    Select File
+                    </label>
+                </div>
+
+                <p class="note">Optional but recommended</p>
+
+              </div>
+              
+            </div>
+
+
+
+            
+            <div class="form-control summary-container">
+              <label for="date">key skill</label>
+              <div class="text-box">
+                <input
+                  type="comment"
+                  name="comment"
+                  id="comment"
+                  placeholder="optional short professional bio..."
+                />
+              
+                <span class="notice option">(optional)</span>
+              </div>
+             
+            </div>
+
+            <div class="button-container-three">
+              <button type="button" class="back back2">Back to personal</button>
+
+              <button type="button" class="save next3">Save &amp; Continue</button>
+            </div>
+            
+          </section>
+        </section>
+      </form>
+    </section>
+    </main>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/js/intlTelInput.min.js"></script> -->
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
