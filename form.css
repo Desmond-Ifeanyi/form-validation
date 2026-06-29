@@ -603,10 +603,10 @@ margin-top: 1.5rem;
 
 .button-container-three{
     display: flex;
-    gap: 4rem;
-}
+    gap: 1rem;
+} 
 .next3{
-    margin-left: 1rem;
+    margin-left: 3rem;
 }
 .select-icon{
     display: flex;
