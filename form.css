@@ -801,10 +801,13 @@ margin-right: -1rem;
 
 
     .button-container{
-        gap:31.4rem;
+        /* gap:31.4rem; */
         margin-top: 9px;
+        
     }
-
+.next2{
+    margin-left: 14rem;
+}
     #Required-shift{
     /* background-color: red; */
     position: absolute;
@@ -848,9 +851,10 @@ margin-right: -1rem;
         /* background-color: red; */
     }
     #LastName-icon{
-         position: absolute;
-        left: 21.5rem;
+         /* position: absolute;
+        left: 21.5rem; */
         /* background-color: blue; */
+        margin-left: 1rem;
     }
     #date-icon{
           position: absolute;
@@ -957,7 +961,7 @@ width: 24rem;
 
 
 .summary-container{
-    width: 52rem;
+    /* width: 52rem; */
 }
 
 .next3{
