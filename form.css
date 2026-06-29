@@ -229,25 +229,6 @@ input[type="checkbox"] {
 .text-box .icon.error {
     color: #8c0720;
 }
-/* .valid{
-    border:2px solid #1F9354;
-}
-
-.invalid{
-    border:2px solid red ;
-} */
-
-/* 
-.success{
-    color:green;
-}
-
-.error{
-    color:red;
-} */
-
-
-
 .text-box .icon-eye {
     position: absolute;
     right: .5rem;
@@ -350,39 +331,35 @@ button.save:hover {
 .address-container input{
   height: 2.3rem;
 }
+
 #Required-shift{
+margin-left: -.8rem;
 /* background-color: red; */
-position: absolute;
-left: 9.2rem;
 }
+
 .street-city-container input, .state-zip-container input{
-   width: 80%;
-  
+   width: 81%;
 }
 #icon-city{
-    position: absolute;
-    left: 9.5rem;
-    bottom: 1.7rem;
+    
+    margin-left: -.6rem;
+    margin-top: .5rem;
      /* background-color: red; */
 }
 #icon-zip{
-     position: absolute;
-    left: 9.6rem;
-  
-    
+    margin-left: -.6rem;
 }
 #icon-strecity{
-  position: relative;
-  left: 0;
+    margin-left:-1.5rem;
   margin-top: 3px;
   /* background-color: red; */
  
 }
 
 #stater-icon{
-position: relative;
-  left: 0;
-  margin-top: 7px;
+
+ margin-left:-1.5rem;
+  margin-top: 3px;
   /* background-color: green; */
 }
 
@@ -419,23 +396,19 @@ button.back:hover{
     gap: 3.4rem;
 }
 
-.number-field input{
-    width: 20rem;
-}
 
 
 /* -----------gender css --------- */
 
 .Gender-field{
   position:relative;
-  width:20rem;
   margin:20px 0;
   /* background-color: blue; */
 }
 #phone-require{
     /* background-color: red; */
-    top: 1.2rem;
-    right: -2rem;
+    margin-top: 1.2rem;
+    margin-left: 0;
 }
 .Gender-field label{
   display:block;
@@ -445,7 +418,7 @@ button.back:hover{
 }
 
 .Gender-field select{
-  width:320px;
+  width:95%;
   height:50px;
   border:2px solid #ccc;
   border-radius:10px;
@@ -457,18 +430,9 @@ button.back:hover{
 }
 
 
-
-
-
 /* -------------------third-page------------------- */
 
 
-
-.portfolio-container{
-  width:320px;
-bottom: .6rem;
-  
-}
 
 .portfolio-container label{
   display:block;
@@ -478,6 +442,7 @@ bottom: .6rem;
 
 .custom-upload{
   display:flex;
+  width: 95%;
   justify-content:space-between;
   align-items:center;
   border:2px dashed #ddd;
@@ -524,10 +489,7 @@ bottom: .6rem;
 /* --- */
 
 
-  .skill-container{
-    max-width:360px;
-    width: 21.4rem;
-}
+
 
   .field-label{
     display:flex;
@@ -555,19 +517,9 @@ bottom: .6rem;
 
   .tag-area{
     flex:1
+    
 }
 
-  .tag-box{
-    border:1.5px solid #b8b1b1;
-    border-radius:8px;
-    padding:8px 10px;
-    display:flex;
-    flex-wrap:wrap;
-    gap:6px;
-    align-items:center;
-     background-color: #ECF0F3;
-    cursor:text
-}
 
   .tag{
     display:flex;
@@ -613,8 +565,11 @@ bottom: .6rem;
 }
 
 #skill-icon{
-position: relative;
-top: 1.7rem;
+/* background-color: red; */
+position: absolute;
+margin-right: -1.5rem;
+right: 1rem;
+margin-top: 1.5rem;
 }
 
 #skill-icon.success {
@@ -623,6 +578,19 @@ top: 1.7rem;
 
 #skill-icon.error {
     color: #8c0720;
+}
+
+.skill-container .tag-box{
+    width:95%;
+     border:1.5px solid #b8b1b1;
+    border-radius:8px;
+    padding:8px 10px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px;
+    align-items:center;
+     background-color: #ECF0F3;
+    cursor:text
 }
 
 .summary-container input{
@@ -637,13 +605,17 @@ top: 1.7rem;
     display: flex;
     gap: 5.5rem;
 }
+.next3{
+    margin-left: 1rem;
+}
 .select-icon{
     display: flex;
 }
 #primary-icon{
-    position: relative;
-    margin-top: .6rem;
-    left: .7rem;
+   
+     /* position: relative; */
+    /* margin-top: 0rem; */
+    margin-right: 1rem; 
    
 }
 
@@ -652,12 +624,16 @@ top: 1.7rem;
     top: 1.7rem;
     left: .4rem;
 }
+
+
+
 .primary-job select{
-  width:32.5rem;
+     width: 95%;
+  /* width:32.5rem; */
   height:40px;
   border:2px solid #ccc;
   border-radius:10px;
-  padding:0 15px;
+  padding: .3rem 1rem;
   font-size:16px;
   outline:none;
   cursor:pointer;
@@ -665,11 +641,11 @@ top: 1.7rem;
 }
 
 .experiece-container select{
-  width:32.7rem;
+  width:95%;
   height:40px;
   border:2px solid #ccc;
   border-radius:10px;
-  padding:0 15px;
+ padding: .3rem 1rem;
   font-size:16px;
   outline:none;
   cursor:pointer;
@@ -693,7 +669,6 @@ height:40px;
   background-color: #ECF0F3;
 }
 .company-name input{
-/* width:32rem; */
   height:40px;
   border:2px solid #ccc;
   border-radius:10px;
@@ -705,170 +680,65 @@ height:40px;
 }
 
 @media screen and (min-width: 414px) {
-   
-#icon-city{
-    position: absolute;
-    left: 10.3rem;
-    bottom: 1.7rem;
-    
-   
-}
 
-#icon-zip{
-     position: absolute;
-    left: 10.3rem;
-}
-.Gender-field select{
-  width:345px;
-
-}
-#Required-shift{
-/* background-color: red; */
-position: absolute;
-left: 10rem;
-}
 
 .button-container{
-    display: flex;
-    gap: 5.3rem;
+    /* display: flex; */
+    gap: 5.6rem;
     
 }
 
-.number-field input{
-    width: 22rem;
-}
 
-.Gender-field{
-  position:relative;
-  width:21.7rem;
-  margin:20px 0;
-  /* background-color: blue; */
-}
 
-.portfolio-container{
-  width:350px;
-  margin-top: 1rem;
- 
-}
- 
-
-.skill-container{
-    max-width:375px;
-    width: 25rem;
-}
-
-.button-container-three{
-    display: flex;
-    gap: 7.3rem;
-}
 }
 
 
 
 
 @media screen and (min-width: 600px) {
-   
-#icon-city{
-    position: absolute;
-    left: 18.5rem;
-    bottom: 1.7rem;
-   
-}
- .street-city-container input, .state-zip-container input{
-   width: 100%;
- 
-}
-
-#icon-zip{
-     position: absolute;
-    left: 18.5rem;
-   
-   
-}
-
-.button-container{
-    gap: 16.5rem;
-
-}
-.city-field input{  
-   margin-left: 5rem;
-    margin-top: 1.5rem;
-  
-}
-.zipcode-field input{
-     margin-left: 5rem;
-     
-}
-.Gender-field select{
-  width:520px;
- 
-}
-
-#Required-shift{
-/* background-color: red; */
-position: absolute;
-left: 18rem;
-bottom: 1rem;
-}
-
-.number-field input{
-    width: 32.5rem;
-}
-
-
-
-.Gender-field{
-  position:relative;
-  width:32.8rem;
-  margin:20px 0;
-  /* background-color: blue; */
-}
-
-#phone-require{
-    /* background-color: red; */
-    top: 1.2rem;
-    right: -.8rem;
-}
-
+ .state-zip-container, .street-city-container{
+    gap: 7.7rem;
+ }
 
 .portfolio-container{
-  width:520px;
+  /* width:520px; */
   margin-top: 1rem;
 }
 
 
-.skill-container{
-    max-width:560px;
-    width: 34.3rem;
+.button-container{
+    /* display: flex; */
+    width: 100%;
+    gap: 17.3rem;
+    
 }
-
 .button-container-three{
     display: flex;
     gap: 18.3em;
 }
-#primary-icon{
-    position: relative;
-    top: .8rem;
-    left: .9rem;
+
+
+#skill-icon{
+margin-right: -1rem;
+
 }
 
-
-.experiece-container select{
-  width:32.7rem;
-  height:40px;
-  border:2px solid #ccc;
-  border-radius:10px;
-  padding:0 15px;
-  font-size:16px;
-  outline:none;
-  cursor:pointer;
-  background-color: #ECF0F3;
+.next3{
+    margin-left: 1.3rem;
+}
 }
 
 
 
+/* @media screen and (min-width: 752px) {
+.next3{
+    margin-left: 40rem;
+}
+.button-container-three{
+    gap: 5rem;
 }
 
+} */
 
 @media screen and (min-width: 768px) {
 
@@ -892,15 +762,15 @@ bottom: 1rem;
         position: relative;
         top: 8px;
         left: 1rem;
-        /* background-color: red; */
+      
     }
 
     .street-city-container input, .state-zip-container input{
-         width: 79%;
+         width: 100%;
  
     }
     .city-field input{
-        /* background-color: orange; */
+    
         position: relative;
         right: 3rem;
     }
@@ -909,41 +779,36 @@ bottom: 1rem;
         position: relative;
         right: 2.6rem;
         top: 10px;
-        /* background-color: brown; */
+    }
+    
+    #phone-require{
+        /* background-color: red; */
+       position: absolute;
+       bottom:0;
     }
     .state{
         position: relative;
         left: 1rem;
         top: 1.5rem
     }
-    #icon-zip{
-     position: absolute;
-    left: 11.7rem;
-    bottom: 10px;
-}
+   
 
 
-
-    #icon-city{
-        position: absolute;
-        left: 11rem;
-    }
     .button-container{
         gap:31.4rem;
         margin-top: 9px;
     }
 
-    #stater-icon{
-    left: 1rem;
-    top: 1.3rem;
-    }
     #Required-shift{
     /* background-color: red; */
     position: absolute;
-    left: 11.5rem;
+    left: 7rem;
     top: 1px;
     }
 
+    #last-name-req, #first-name-req, #date-req{
+    margin-left: 1rem;
+    }
 
     .Names-container{
     /* background-color: red; */
@@ -986,10 +851,6 @@ bottom: 1rem;
         left: 21.5rem;
     }
 
-    .number-field input{
-    width: 21.4rem;
-}
-
 
 .Gender-field{
   position:relative;
@@ -1001,13 +862,32 @@ bottom: 1rem;
   width:340px;
  
 }
+#gender{
+    width: 100%;
+}
 #phone-require{
     /* background-color: red; */
     top: 1.2rem;
     right: -1.5rem;
 }
+#icon-strecity{
+    margin-left: 1rem;
+  
+}
 
+#icon-city{
+margin-right: 0 ;
+margin-left: -2rem;
+}
 
+ #stater-icon{
+   margin-left: 2rem;
+    }
+
+    #icon-zip{
+        margin-left: -2rem;
+        margin-top: .5rem;
+    }
 .skill-portfolio-container{
    display: flex;
 }
@@ -1021,11 +901,12 @@ display: flex;
 gap: 1.5rem;
 }
 #primary-icon{
-    position: relative;
-    left: .2rem;
+   margin-left: 1rem;
 }
 .current-job-container{
-width: 23.5rem;
+width: 23.7rem;
+margin-left: 1rem;
+/* background-color: red; */
 }
 .job-container-container{
 display: flex;
@@ -1054,23 +935,27 @@ gap: 1.5rem;
   background-color: #ECF0F3;
 }
 .skill-portfolio-container{
-    gap: 1.5rem;
+    gap: 1.7rem;
 }
 .skill-container{
-width: 23.8rem;
+width: 23.2rem;
+}
+#skill-icon{
+    margin-right: -1.5rem;
+    margin-left: -2rem;
 }
 .portfolio-container{
 width: 24rem;
-position: relative;
-right: .6rem;
+
 }
 
 
 .summary-container{
     width: 52rem;
 }
-.button-container-three{
-    gap: 35rem;
+
+.next3{
+    margin-left: 16.5rem;
 }
 }
 
